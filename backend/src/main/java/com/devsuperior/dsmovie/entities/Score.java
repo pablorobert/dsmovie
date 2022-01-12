@@ -10,15 +10,15 @@ public class Score {
 
 	@EmbeddedId
 	private ScoreId id = new ScoreId();
-	private Double score;
+	private Double value;
 	
 	public Score() {
 		
 	}
 
-	public Score(ScoreId id, Double score) {
+	public Score(ScoreId id, Double value) {
 		this.id = id;
-		this.score = score;
+		this.value = value;
 	}
 
 	public ScoreId getId() {
@@ -37,12 +37,12 @@ public class Score {
 		this.id = id;
 	}
 
-	public Double getScore() {
-		return score;
+	public Double getValue() {
+		return value;
 	}
 
-	public void setScore(Double score) {
-		this.score = score;
+	public void setScore(Double value) {
+		this.value = value;
 	}
 	
 }
